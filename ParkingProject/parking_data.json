@@ -1,0 +1,177 @@
+{
+    "parking_spots": [
+        {
+            "type": "long_term",
+            "occupied": true,
+            "car": {
+                "license_plate": "IOA1000",
+                "owner_name": "RAGIAS KOSTAS",
+                "rental_start": "2025-09-11T13:39:28.413857",
+                "rental_end": "2025-10-11T13:39:28.413857"
+            }
+        },
+        {
+            "type": "long_term",
+            "occupied": true,
+            "car": {
+                "license_plate": "NKP2020",
+                "owner_name": "KONSTANTINOU NIKOS",
+                "rental_start": "2025-09-11T13:39:28.413857",
+                "rental_end": "2025-10-11T13:39:28.413857"
+            }
+        },
+        {
+            "type": "long_term",
+            "occupied": true,
+            "car": {
+                "license_plate": "ATH9999",
+                "owner_name": "KOUTRAS STAVROS",
+                "rental_start": "2025-09-11T13:39:28.413857",
+                "rental_end": "2025-10-11T13:39:28.413857"
+            },
+            "temporarily_vacant": false
+        },
+        {
+            "type": "long_term",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "long_term",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        },
+        {
+            "type": "hourly",
+            "occupied": false,
+            "car": null
+        }
+    ],
+    "transactions": [
+        {
+            "type": "rental",
+            "license_plate": "IOA1000",
+            "owner_name": "RAGIAS KOSTAS",
+            "time": "2025-02-01T19:41:48.830509",
+            "cost": 50
+        },
+        {
+            "type": "rental",
+            "license_plate": "NKP2020",
+            "owner_name": "KONSTANTINOU NIKOS",
+            "time": "2025-02-01T19:42:13.870680",
+            "cost": 50
+        },
+        {
+            "type": "rental",
+            "license_plate": "ATH9999",
+            "owner_name": "KOUTRAS STAVROS",
+            "time": "2025-02-01T19:42:34.220881",
+            "cost": 50
+        },
+        {
+            "type": "exit",
+            "license_plate": "BOP5446",
+            "time": "2025-02-02T14:17:54.032144",
+            "cost": 2
+        },
+        {
+            "type": "exit",
+            "license_plate": "NKK8878",
+            "time": "2025-02-02T14:18:03.343778",
+            "cost": 2
+        },
+        {
+            "type": "rental_renewal",
+            "license_plate": "IOA1000",
+            "owner_name": "RAGIAS KOSTAS",
+            "time": "2025-09-11T13:39:28.413857",
+            "cost": 50
+        },
+        {
+            "type": "rental_renewal",
+            "license_plate": "NKP2020",
+            "owner_name": "KONSTANTINOU NIKOS",
+            "time": "2025-09-11T13:39:28.413857",
+            "cost": 50
+        },
+        {
+            "type": "rental_renewal",
+            "license_plate": "ATH9999",
+            "owner_name": "KOUTRAS STAVROS",
+            "time": "2025-09-11T13:39:28.413857",
+            "cost": 50
+        }
+    ],
+    "revenue": 304.0
+}
