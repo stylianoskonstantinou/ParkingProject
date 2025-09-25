@@ -63,7 +63,4 @@ The application includes:
 Stylianos Konstantinou  
 Postgraduate student in Applied Informatics, Department of Electrical and Computer Engineering, University of Thessaly.
 
-## About
-
-A complete parking management application with a friendly graphical interface in Python, designed for educational purposes and as a master's project at the University of Thessaly.
 
