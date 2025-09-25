@@ -1,51 +1,66 @@
 # Parking Management GUI (Python)
 
-Πρόκειται για μια εφαρμογή διαχείρισης πάρκινγκ με γραφικό περιβάλλον χρήστη βασισμένο στην Python με Tkinter. Δημιουργήθηκε ως έργο μεταπτυχιακού στο Πανεπιστήμιο Θεσσαλίας.
+This is a parking management application with a graphical user interface built in Python using Tkinter. It was developed as a master's project at the University of Thessaly.
 
-## Αναλυτική Περιγραφή Λειτουργιών
+## Detailed Description of Features
 
-Η εφαρμογή περιλαμβάνει:
+The application includes:
 
-- **Διαχείριση θέσεων στάθμευσης:** Το σύστημα διαχειρίζεται 20 θέσεις, εκ των οποίων 5 είναι για μακροχρόνια στάθμευση (long-term) και 15 για ωριαία (hourly). Κάθε θέση έχει κατάσταση (κατειλημμένη ή ελεύθερη).
+- Management of parking spaces: The system manages 20 spaces, 5 of which are for long-term parking and 15 for hourly. Each space has a status (occupied or free).
+- Vehicle entry: The user can enter a car for either hourly or long-term parking. If a car already has a long-term parking space, it returns to it.
+- Vehicle exit: Records the exit of a car and calculates the charge based on the parking duration. Hourly spots are charged €2 per hour (rounded up). Long-term spots have a monthly fee of €50.
+- Space rental: There is an option to rent a long-term parking space for one month at a flat rate of €50.
+- Saving & Loading data: All data are saved in a JSON file (`parking_data.json`) and loaded on startup.
+- Viewing space status: The user can graphically see which spaces are occupied or free, with different colors for each type of space.
+- List of parked cars: A list appears with license plates and whether they are hourly or permanent customers.
+- Cash register for the day: Displays the total collections for the current day.
+- Best customer: Shows the customer(s) who paid the most.
+- Renewal management: Automatically renews expired long-term rentals with the applicable charge.
 
-- **Εισαγωγή αυτοκινήτου:** Ο χρήστης μπορεί να εισάγει αυτοκίνητο είτε για ωριαία στάθμευση είτε για μακροχρόνια. Αν το αυτοκίνητο έχει ήδη θέση μακροχρόνιας, επιστρέφει εκεί.
+## Execution Instructions
 
-- **Έξοδος αυτοκινήτου:** Καταγραφή εξόδου αυτοκινήτου και υπολογισμός χρέωσης με βάση τον χρόνο στάθμευσης. Οι ωριαίες θέσεις χρεώνονται 2€ την ώρα (με στρογγυλοποίηση προς τα πάνω). Οι μακροχρόνιες έχουν μηνιαία χρέωση 50€.
+1. Ensure that you have Python 3.8+ installed.
+2. Install Tkinter (if not already available):
 
-- **Ενοικίαση θέσης:** Υπάρχει η δυνατότητα ενοικίασης μακροχρόνιας θέσης για 1 μήνα με προκαθορισμένη χρέωση 50€.
+   ```
+   pip install tk
+   ```
 
-- **Αποθήκευση & Φόρτωση δεδομένων:** Όλα τα δεδομένα αποθηκεύονται σε αρχείο JSON (`parking_data.json`) και φορτώνονται κατά την εκκίνηση.
+   On some Linux systems, you might need:
 
-- **Προβολή κατάστασης θέσεων:** Ο χρήστης μπορεί να δει γραφικά ποιες θέσεις είναι κατειλημμένες ή ελεύθερες, με διαφορετικά χρώματα για τύπο θέσης.
+   ```
+   sudo apt-get install python3-tk
+   ```
 
-- **Λίστα παρκαρισμένων αυτοκινήτων:** Εμφανίζεται λίστα με τις πινακίδες και αν είναι ωριαίος ή μόνιμος πελάτης.
+3. Download all project files (ParkingProject.py, parking_data.json, README.md, requirements.txt) from the repository.
+4. If required, install the application's dependencies:
 
-- **Ταμείο ημέρας:** Υπολογίζει και εμφανίζει τις συνολικές εισπράξεις για την τρέχουσα ημέρα.
+   ```
+   pip install -r requirements.txt
+   ```
 
-- **Καλύτερος πελάτης:** Προβάλλει τον πελάτη ή τους πελάτες που πλήρωσαν τα περισσότερα χρήματα.
+5. Run the application using the command:
 
-- **Διαχείριση ανανεώσεων:** Αυτόματη ανανέωση μακροχρόνιων ενοικιάσεων που έχουν λήξει, με αντίστοιχη χρέωση.
+   ```
+   python ParkingProject.py
+   ```
+
+   or
+
+   ```
+   python3 ParkingProject.py
+   ```
+
+## Program Files
+
+- ParkingProject.py: Main application code.
+- parking_data.json: Data storage file.
+- README.md: This file.
+- requirements.txt: Required libraries for the application.
+
+## Author
+
+Stylianos Konstantinou  
+Postgraduate student in Applied Informatics, Department of Electrical and Computer Engineering, University of Thessaly.
 
 
-## Οδηγίες Εκτέλεσης
-
-1. Βεβαιωθείτε ότι έχετε εγκατεστημένη Python 3.8+.
-2. Εγκαταστήστε το Tkinter (αν δεν υπάρχει):
-```
-pip install tk
-```
-4. Τρέξτε την εφαρμογή με την εντολή:
-```
-python ParkingProject.py
-```
-
-## Αρχεία Προγράμματος
-
-- **ParkingProject.py:** Κύριος κώδικας της εφαρμογής.
-- **parking_data.json:** Αρχείο αποθήκευσης των δεδομένων.
-- **README.md:** Αυτό το αρχείο.
-- **requirements.txt::**  Αρχείο με τις απαιτούμενες βιβλιοθήκες για την εφαρμογή.
-
-## Συγγραφέας
-Κωνσταντίνου Στυλιανός 
-Μεταπτυχιακός φοιτητής Εφαρμοσμένης Πληροφορικής του τμήματος Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών του Πανεπιστημίου Θεσσαλίας
