@@ -1,4 +1,4 @@
-# Parking Management GUI (Python)
+# Parking Management
 
 This is a parking management application with a graphical user interface built in Python using Tkinter. It was developed as a master's project at the University of Thessaly.
 
