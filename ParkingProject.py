@@ -11,7 +11,7 @@ import math  # Βιβλιοθήκη για μαθηματικές λειτουρ
 
 # Δεδομένα για θέσεις πάρκινγκ και συναλλαγές
 parking_data = {
-    "parking_spots": [  # Λίστα με όλες τις διαθέσιμες θέσεις (20)
+    "parking_spots": [  # Λίστα με όλες τις διαθέσιμες θέσεις (20 σύνολο)
         # 5 θέσεις για long term στάθμευση, μη κατειλημμένες
         {"type": "long_term", "occupied": False, "car": None}, 
         {"type": "long_term", "occupied": False, "car": None},  
