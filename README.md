@@ -1,66 +1,85 @@
-# Parking Management
+# Parking Management System (Python & Tkinter)
 
-This is a parking management application with a graphical user interface built in Python using Tkinter. It was developed as a master's project at the University of Thessaly.
+This is a parking management application with a graphical user interface built in Python using Tkinter. The project was developed as part of the Master's Program in Applied Informatics at the University of Thessaly.
 
-## Detailed Description of Features
+## Key Features
 
-The application includes:
+- **Parking Space Management:** Manages 20 parking spaces, including 5 long-term and 15 hourly parking spots.
+- **Vehicle Entry:** Registers incoming vehicles and automatically returns long-term customers to their assigned parking space.
+- **Vehicle Exit:** Calculates parking fees based on the parking duration.
+- **Hourly Parking:** Charges €2 per hour (rounded up to the nearest hour).
+- **Long-Term Parking:** Supports monthly parking rentals at a fixed cost of €50.
+- **Automatic Rental Renewal:** Automatically renews expired long-term rentals and applies the monthly fee.
+- **Parking Space Status:** Displays a graphical overview of occupied and available parking spaces.
+- **Parked Vehicles List:** Displays all currently parked vehicles and their parking type.
+- **Daily Revenue Report:** Shows the total revenue collected during the current day.
+- **Best Customer Report:** Displays the customer(s) with the highest total spending.
+- **Data Persistence:** Stores and loads parking data using a JSON file.
 
-- Management of parking spaces: The system manages 20 spaces, 5 of which are for long-term parking and 15 for hourly. Each space has a status (occupied or free).
-- Vehicle entry: The user can enter a car for either hourly or long-term parking. If a car already has a long-term parking space, it returns to it.
-- Vehicle exit: Records the exit of a car and calculates the charge based on the parking duration. Hourly spots are charged €2 per hour (rounded up). Long-term spots have a monthly fee of €50.
-- Space rental: There is an option to rent a long-term parking space for one month at a flat rate of €50.
-- Saving & Loading data: All data are saved in a JSON file (`parking_data.json`) and loaded on startup.
-- Viewing space status: The user can graphically see which spaces are occupied or free, with different colors for each type of space.
-- List of parked cars: A list appears with license plates and whether they are hourly or permanent customers.
-- Cash register for the day: Displays the total collections for the current day.
-- Best customer: Shows the customer(s) who paid the most.
-- Renewal management: Automatically renews expired long-term rentals with the applicable charge.
+## Technologies
 
-## Execution Instructions
+- Python 3
+- Tkinter
+- JSON
+- Object-Oriented Programming (OOP)
 
-1. Ensure that you have Python 3.8+ installed.
-2. Install Tkinter (if not already available):
+## How to Run
 
-   ```
-   pip install tk
-   ```
+Clone the repository:
 
-   On some Linux systems, you might need:
+```bash
+git clone https://github.com/stylianoskonstantinou/ParkingProject
+cd ParkingProject
+```
 
-   ```
-   sudo apt-get install python3-tk
-   ```
+Install the required dependencies:
 
-3. Download all project files (ParkingProject.py, parking_data.json, README.md, requirements.txt) from the repository.
-4. If required, install the application's dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-   ```
-   pip install -r requirements.txt
-   ```
+Run the application:
 
-5. Run the application using the command:
+```bash
+python ParkingProject.py
+```
 
-   ```
-   python ParkingProject.py
-   ```
+or
 
-   or
+```bash
+python3 ParkingProject.py
+```
 
-   ```
-   python3 ParkingProject.py
-   ```
+## Project Files
 
-## Program Files
+- `ParkingProject.py` – Main application source code.
+- `parking_data.json` – Stores parking spaces, transactions and revenue.
+- `README.md` – Project documentation.
+- `requirements.txt` – Required Python libraries.
 
-- ParkingProject.py: Main application code.
-- parking_data.json: Data storage file.
-- README.md: This file.
-- requirements.txt: Required libraries for the application.
+## Notes
+
+Tkinter is included with most Python installations.
+
+If it is missing, install it with:
+
+```bash
+pip install tk
+```
+
+On some Linux distributions:
+
+```bash
+sudo apt-get install python3-tk
+```
 
 ## Author
 
-Stylianos Konstantinou  
-Postgraduate student in Applied Informatics, Department of Electrical and Computer Engineering, University of Thessaly.
+**Stylianos Konstantinou**
 
+M.Sc. in Applied Informatics  
+University of Thessaly
 
+## License
+
+This project is available for educational purposes.
